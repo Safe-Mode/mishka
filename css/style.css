@@ -423,6 +423,9 @@ template {
 .contacts {
   background-color: #ffffff;
 }
+.page-footer {
+  background-color: #f1f1f1;
+}
 .social {
   background-color: #f1f1f1;
 }
