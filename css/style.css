@@ -436,6 +436,26 @@ template {
 .promo {
   background: #fafafa url(../../img/hero-mobile.jpg) no-repeat;
 }
+.promo__title {
+  font-family: "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+.promo__link {
+  font-family: "Tahoma", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #63d1bb;
+}
+.promo__link--darker {
+  background-color: #56c3b2;
+}
 .catalog-item {
   background-color: #ffffff;
 }
