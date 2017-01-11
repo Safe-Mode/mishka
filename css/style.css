@@ -507,7 +507,31 @@ template {
   list-style: none;
 }
 .reviews {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
   background-color: #ffffff;
+}
+.reviews__title {
+  font-family: "Verdana", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+}
+.reviews__author-name {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+.reviews__author-nick {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
 }
 .contacts {
   background-color: #ffffff;
