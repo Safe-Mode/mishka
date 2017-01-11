@@ -558,5 +558,11 @@ template {
   background-color: #f1f1f1;
 }
 .copyright {
+  font-family: "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
   background-color: #f1f1f1;
 }
