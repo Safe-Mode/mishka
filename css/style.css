@@ -402,3 +402,30 @@ template {
 [hidden] {
   display: none;
 }
+.page-header {
+  background-color: #ffffff;
+}
+.main-nav {
+  background-color: #ffffff;
+}
+.promo {
+  background: #fafafa url(../../img/hero-mobile.jpg) no-repeat;
+}
+.catalog-item {
+  background-color: #ffffff;
+}
+.about-us {
+  background-color: #ffffff;
+}
+.reviews {
+  background-color: #ffffff;
+}
+.contacts {
+  background-color: #ffffff;
+}
+.social {
+  background-color: #f1f1f1;
+}
+.copyright {
+  background-color: #f1f1f1;
+}
