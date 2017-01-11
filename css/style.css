@@ -534,7 +534,22 @@ template {
   color: #444444;
 }
 .contacts {
+  font-family: "Myriad Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
   background-color: #ffffff;
+}
+.contacts__title {
+  font-family: "Verdana", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000000;
+}
+.contacts__info-title {
+  font-family: "Open Sans", sans-serif;
 }
 .page-footer {
   background-color: #f1f1f1;
