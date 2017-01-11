@@ -451,6 +451,7 @@ template {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
+  text-decoration: none;
   background-color: #63d1bb;
 }
 .promo__link--darker {
