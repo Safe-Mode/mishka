@@ -439,11 +439,11 @@ template {
   color: #000000;
   background-color: #ffffff;
 }
-.promo {
+.products {
   padding-top: 90px;
   background: #fafafa url(../../img/hero-mobile.jpg) no-repeat center 15px;
 }
-.promo__title {
+.products__title {
   font-family: "Verdana", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -451,7 +451,7 @@ template {
   line-height: 30px;
   color: #000000;
 }
-.promo__link {
+.products__class {
   display: block;
   width: 100%;
   font-family: "Tahoma", sans-serif;
@@ -463,10 +463,10 @@ template {
   text-decoration: none;
   background-color: #63d1bb;
 }
-.promo__link--darker {
+.products__class--darker {
   background-color: #56c3b2;
 }
-.catalog-item {
+.goods-promo {
   padding-top: 30px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -476,7 +476,7 @@ template {
   color: #444444;
   background-color: #ffffff;
 }
-.catalog-item__title {
+.goods-promo__title {
   margin: 0;
   margin-bottom: 10px;
   font-family: "Verdana", sans-serif;
@@ -485,17 +485,17 @@ template {
   line-height: 30px;
   color: #000000;
 }
-.catalog-item__promo-title {
+.goods-promo__status {
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
 }
-.catalog-item__params {
+.goods-promo__params {
   line-height: 20px;
 }
-.catalog-item__price {
+.goods-promo__price {
   font-family: "Verdana", sans-serif;
   font-weight: 700;
   font-size: 16px;
