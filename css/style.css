@@ -421,6 +421,11 @@ template {
   font-weight: 400;
   font-style: normal;
 }
+.container {
+  width: 320px;
+  padding: 0 30px;
+  margin: auto;
+}
 .page-header {
   background-color: #ffffff;
 }
