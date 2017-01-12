@@ -422,7 +422,8 @@ template {
   font-style: normal;
 }
 .container {
-  width: 320px;
+  box-sizing: border-box;
+  width: 321px;
   padding: 0 30px;
   margin: auto;
 }
@@ -439,7 +440,8 @@ template {
   background-color: #ffffff;
 }
 .promo {
-  background: #fafafa url(../../img/hero-mobile.jpg) no-repeat;
+  padding-top: 90px;
+  background: #fafafa url(../../img/hero-mobile.jpg) no-repeat center 15px;
 }
 .promo__title {
   font-family: "Verdana", sans-serif;
@@ -450,6 +452,8 @@ template {
   color: #000000;
 }
 .promo__link {
+  display: block;
+  width: 100%;
   font-family: "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -463,6 +467,7 @@ template {
   background-color: #56c3b2;
 }
 .catalog-item {
+  padding-top: 30px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -472,6 +477,8 @@ template {
   background-color: #ffffff;
 }
 .catalog-item__title {
+  margin: 0;
+  margin-bottom: 10px;
   font-family: "Verdana", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -495,6 +502,8 @@ template {
   line-height: 24px;
 }
 .about-us {
+  padding-top: 30px;
+  margin-bottom: 60px;
   font-family: "Verdana", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -504,14 +513,29 @@ template {
   background-color: #ffffff;
 }
 .about-us__title {
+  margin: 0;
+  margin-bottom: 35px;
   font-size: 24px;
   line-height: 30px;
   color: #000000;
 }
+.about-us__list {
+  margin: 0;
+  padding: 0;
+}
 .about-us__item {
   list-style: none;
 }
+.about-us__item-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+}
+.about-us__item:last-child .about-us__item-text {
+  margin-bottom: 0;
+}
 .reviews {
+  margin-bottom: 45px;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -521,10 +545,20 @@ template {
   background-color: #ffffff;
 }
 .reviews__title {
+  margin: 0;
+  margin-bottom: 35px;
   font-family: "Verdana", sans-serif;
   font-weight: 700;
   font-size: 24px;
   color: #000000;
+}
+.reviews__item {
+  margin: 0;
+  margin-bottom: 30px;
+}
+.reviews__item-text {
+  margin: 0;
+  margin-bottom: 30px;
 }
 .reviews__author-name {
   font-style: normal;
@@ -539,6 +573,7 @@ template {
   color: #444444;
 }
 .contacts {
+  margin-bottom: 40px;
   font-family: "Myriad Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -548,21 +583,32 @@ template {
   background-color: #ffffff;
 }
 .contacts__title {
+  margin: 0;
+  margin-bottom: 30px;
   font-family: "Verdana", sans-serif;
   font-weight: 700;
   font-size: 24px;
   color: #000000;
 }
+.contacts__info {
+  margin-bottom: 30px;
+}
 .contacts__info-title {
   font-family: "Open Sans", sans-serif;
+}
+.contacts__map {
+  margin-bottom: 40px;
 }
 .page-footer {
   background-color: #f1f1f1;
 }
 .social {
+  padding: 25px 0;
   background-color: #f1f1f1;
+  border-bottom: 1px solid #e5e5e5;
 }
 .copyright {
+  padding: 30px 0;
   font-family: "Verdana", sans-serif;
   font-style: normal;
   font-weight: 700;

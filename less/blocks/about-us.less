@@ -1,4 +1,7 @@
 .about-us {
+  padding-top: 30px;
+  margin-bottom: 60px;
+
   font-family: @base-font;
   font-style: normal;
   font-weight: 700;
@@ -9,12 +12,30 @@
   background-color: #ffffff;
 
   &__title {
+    margin: 0;
+    margin-bottom: 35px;
+
     font-size: 24px;
     line-height: 30px;
     color: @color-title;
   }
 
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
   &__item {
     list-style: none;
+
+    &-text {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 35px;
+    }
+
+    &:last-child &-text {
+      margin-bottom: 0;
+    }
   }
 }
