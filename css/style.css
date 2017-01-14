@@ -451,7 +451,7 @@ template {
 }
 .products {
   padding-top: 90px;
-  background: #fafafa url(../../img/hero-mobile.jpg) no-repeat center 15px;
+  background: #fafafa url(../../img/hero-mobile.jpg) no-repeat top center;
 }
 .products__title {
   font-family: "Verdana", sans-serif;
