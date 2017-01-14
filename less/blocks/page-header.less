@@ -1,7 +1,20 @@
-.page-header {  
+.page-header {
   background-color: #ffffff;
 
   &__delivery {
     display: none;
+
+    font-family: @base-font;
+    font-size: 14px;
+    line-height: 24px;
+    color: @color-base;
+
+    @media @tablet-widths {
+      position: absolute;
+      right: 0;
+      top: 106px;
+
+      display: block;
+    }
   }
 }
