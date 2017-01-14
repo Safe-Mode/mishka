@@ -440,6 +440,9 @@ template {
 .page-header {
   background-color: #ffffff;
 }
+.page-header__delivery {
+  display: none;
+}
 .main-nav {
   font-family: "Verdana", sans-serif;
   font-style: normal;
@@ -448,6 +451,24 @@ template {
   line-height: 24px;
   color: #000000;
   background-color: #ffffff;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+.main-nav__user-list {
+  margin: 0;
+  padding: 0;
+}
+.main-nav__item {
+  padding: 30px 0;
+  padding-left: 45px;
+  list-style: none;
+  border-bottom: 1px solid #ececec;
+}
+.main-nav__link {
+  color: inherit;
+  text-decoration: none;
 }
 .products {
   padding-top: 90px;
