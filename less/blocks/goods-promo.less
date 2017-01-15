@@ -1,5 +1,6 @@
 .goods-promo {
   padding-top: 30px;
+  padding-bottom: 35px;
 
   font-family: @decor-font;
   font-style: normal;
@@ -30,13 +31,31 @@
   }
 
   &__params {
+    margin-bottom: 30px;
+
     line-height: 20px;
   }
 
+  &__cell {
+    height: 40px;
+
+    &--title {
+      width: 100px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 25px;
+  }
+
   &__price {
+    display: block;
+    margin-bottom: 30px;
+
     font-family: @base-font;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
+    text-align: center;
   }
 }
