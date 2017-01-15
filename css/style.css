@@ -536,6 +536,9 @@ template {
     vertical-align: top;
     border-bottom: none;
   }
+  .main-nav__item--menu {
+    font-size: 14px;
+  }
   .main-nav__item--menu:nth-child(2n+1) {
     padding-left: 0;
   }
@@ -564,16 +567,22 @@ template {
   background: #fafafa url(../../img/hero-mobile.jpg) no-repeat top center;
 }
 .products__title {
+  margin: 0;
+  margin-bottom: 125px;
+  padding: 0 30px;
   font-family: "Verdana", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #000000;
+  text-align: center;
 }
-.products__class {
+.products__link {
   display: block;
+  box-sizing: border-box;
   width: 100%;
+  padding: 30px;
   font-family: "Tahoma", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -583,8 +592,21 @@ template {
   text-decoration: none;
   background-color: #63d1bb;
 }
-.products__class--darker {
+.products__link--toys {
   background-color: #56c3b2;
+}
+@media (min-width: 768px) {
+  .products {
+    padding-top: 160px;
+    background: #fafafa url(../../img/hero-desktop.jpg) no-repeat top center;
+  }
+  .products__title {
+    margin-bottom: 380px;
+  }
+  .products__link {
+    float: left;
+    width: 50%;
+  }
 }
 .goods-promo {
   padding-top: 30px;
