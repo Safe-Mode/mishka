@@ -602,10 +602,20 @@ template {
   }
   .products__title {
     margin-bottom: 380px;
+    font-size: 40px;
+    line-height: 50px;
   }
   .products__link {
     float: left;
     width: 50%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media (min-width: 1150px) {
+  .products__title {
+    font-size: 50px;
+    line-height: 57px;
   }
 }
 .goods-promo {
