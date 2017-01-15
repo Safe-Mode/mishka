@@ -690,6 +690,7 @@ template {
   padding: 0;
 }
 .about-us__item {
+  padding-top: 55px;
   list-style: none;
 }
 .about-us__item-text {
