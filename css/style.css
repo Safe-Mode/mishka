@@ -597,6 +597,7 @@ template {
 }
 @media (min-width: 768px) {
   .products {
+    margin-bottom: 50px;
     padding-top: 160px;
     background: #fafafa url(../../img/hero-desktop.jpg) no-repeat top center;
   }
@@ -613,6 +614,9 @@ template {
   }
 }
 @media (min-width: 1150px) {
+  .products {
+    margin-bottom: 70px;
+  }
   .products__title {
     font-size: 50px;
     line-height: 57px;
@@ -658,6 +662,10 @@ template {
 .goods-promo__image {
   margin-bottom: 25px;
 }
+.goods-promo__image-tablet,
+.goods-promo__image-desktop {
+  display: none;
+}
 .goods-promo__price {
   display: block;
   margin-bottom: 30px;
@@ -666,6 +674,90 @@ template {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .goods-promo {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 608px;
+  }
+  .goods-promo__title {
+    margin-bottom: 55px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .goods-promo__status {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 80px;
+  }
+  .goods-promo__description {
+    width: 290px;
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .goods-promo__params {
+    width: 290px;
+    margin-bottom: 55px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .goods-promo__image {
+    position: absolute;
+    top: 115px;
+    right: 0;
+  }
+  .goods-promo__image-mobile {
+    display: none;
+  }
+  .goods-promo__image-tablet {
+    display: block;
+  }
+  .goods-promo__image__desktop {
+    display: none;
+  }
+  .goods-promo__price {
+    width: 290px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 1150px) {
+  .goods-promo {
+    min-height: 792px;
+  }
+  .goods-promo .container {
+    padding-top: 60px;
+    padding-left: 175px;
+  }
+  .goods-promo__title {
+    position: relative;
+    z-index: 2;
+    font-size: 50px;
+    line-height: 57px;
+  }
+  .goods-promo__status {
+    top: 70px;
+    left: 0;
+    width: 175px;
+    text-align: center;
+  }
+  .goods-promo__params {
+    margin-bottom: 100px;
+  }
+  .goods-promo__image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .goods-promo__image-tablet {
+    display: none;
+  }
+  .goods-promo__image-desktop {
+    display: block;
+  }
 }
 .about-us {
   padding-top: 30px;
