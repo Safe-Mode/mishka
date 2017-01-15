@@ -564,7 +564,7 @@ template {
 }
 .products {
   padding-top: 90px;
-  background: #fafafa url(../../img/hero-mobile.jpg) no-repeat top center;
+  background: #fafafa url(../img/hero-mobile.jpg) no-repeat top center;
 }
 .products__title {
   margin: 0;
@@ -599,7 +599,7 @@ template {
   .products {
     margin-bottom: 50px;
     padding-top: 160px;
-    background: #fafafa url(../../img/hero-desktop.jpg) no-repeat top center;
+    background: #fafafa url(../img/hero-desktop.jpg) no-repeat top center;
   }
   .products__title {
     margin-bottom: 380px;
