@@ -803,7 +803,7 @@ template {
     font-size: 40px;
     line-height: 50px;
   }
-  .about-us__wrapper::after {
+  .about-us__lists-wrapper::after {
     content: "";
     display: table;
     clear: both;
@@ -814,6 +814,21 @@ template {
   }
   .about-us__item {
     margin-bottom: 60px;
+  }
+}
+@media (min-width: 1150px) {
+  .about-us {
+    margin-bottom: 90px;
+  }
+  .about-us .container {
+    padding: 0 175px;
+  }
+  .about-us__title {
+    font-size: 50px;
+    line-height: 57px;
+  }
+  .about-us__list {
+    width: 350px;
   }
 }
 .reviews {
