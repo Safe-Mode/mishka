@@ -1,6 +1,6 @@
 .reviews {
-  margin-bottom: 45px;
-  
+  padding-bottom: 45px;
+
   font-family: @decor-font;
   font-style: normal;
   font-weight: 400;
@@ -38,9 +38,52 @@
   }
 
   &__author-nick {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 30px;
     color: @color-base;
+  }
+}
+
+@media @tablet-widths {
+  .reviews {
+    padding-bottom: 0;
+    
+    font-size: 16px;
+
+    .container {
+      width: 768px;
+      padding-top: 80px;
+      padding-right: 20px;
+      padding-bottom: 180px;
+      padding-left: 50px;
+
+      background: #ffffff url(../img/review-bg.jpg) no-repeat left top;
+    }
+
+    &__title {
+      margin-bottom: 60px;
+
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__author {
+      width: 334px;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .reviews {
+
+    .container {
+      width: 1050px;
+      padding: 0 175px;
+      padding-top: 85px;
+      padding-bottom: 185px;
+    }
+
+    &__title {
+      font-size: 50px;
+      line-height: 57px;
+    }
   }
 }
