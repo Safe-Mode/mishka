@@ -1,6 +1,6 @@
 .contacts {
-  margin-bottom: 40px;
-  
+  padding: 40px 0;
+
   font-family: @contact-font;
   font-style: normal;
   font-weight: 400;
@@ -9,6 +9,13 @@
   color: @color-base;
 
   background-color: #ffffff;
+
+  &__wrapper {
+    .container();
+
+    box-sizing: border-box;
+    padding: 0 30px;
+  }
 
   &__title {
     margin: 0;
@@ -29,6 +36,9 @@
   }
 
   &__map {
+    .container();
+
     margin-bottom: 40px;
+    height: 455px;
   }
 }
