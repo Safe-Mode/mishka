@@ -12,7 +12,7 @@
 
   &__wrapper {
     .container();
-    
+
     box-sizing: border-box;
     padding: 0 30px;
   }
@@ -50,12 +50,17 @@
 
 @media @tablet-widths {
   .about-us {
+    padding-top: 50px;
+    padding-bottom: 80px;
+
     font-size: 20px;
 
-    margin-bottom: 80px;
+    &__wrapper {
+      padding: 0;
+    }
 
     &__title {
-      padding-bottom: 50px;
+      margin-bottom: 45px;
 
       font-size: 40px;
       line-height: 50px;
@@ -78,9 +83,8 @@
 
 @media @desktop-widths {
   .about-us {
-    margin-bottom: 90px;
 
-    .container {
+    &__wrapper {
       padding: 0 175px;
     }
 

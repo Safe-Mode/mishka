@@ -838,11 +838,15 @@ template {
 }
 @media (min-width: 768px) {
   .about-us {
+    padding-top: 50px;
+    padding-bottom: 80px;
     font-size: 20px;
-    margin-bottom: 80px;
+  }
+  .about-us__wrapper {
+    padding: 0;
   }
   .about-us__title {
-    padding-bottom: 50px;
+    margin-bottom: 45px;
     font-size: 40px;
     line-height: 50px;
   }
@@ -860,10 +864,7 @@ template {
   }
 }
 @media (min-width: 1150px) {
-  .about-us {
-    margin-bottom: 90px;
-  }
-  .about-us .container {
+  .about-us__wrapper {
     padding: 0 175px;
   }
   .about-us__title {
