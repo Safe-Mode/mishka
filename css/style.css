@@ -427,6 +427,7 @@ template {
 .page-header__wrapper {
   width: 320px;
   margin: 0 auto;
+  position: relative;
 }
 @media (min-width: 768px) {
   .page-header__wrapper {
@@ -437,6 +438,11 @@ template {
   .page-header__wrapper {
     width: 1050px;
   }
+}
+.page-header__wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .page-header__delivery {
   display: none;
@@ -517,15 +523,15 @@ template {
   }
   .main-nav__item {
     display: inline-block;
+    padding-right: 0;
     font-size: 16px;
     vertical-align: top;
     border-bottom: none;
   }
   .main-nav__item--menu {
-    font-size: 14px;
-  }
-  .main-nav__item--menu:nth-child(2n+1) {
+    min-width: 167px;
     padding-left: 0;
+    font-size: 14px;
   }
 }
 @media (min-width: 1150px) {
@@ -539,12 +545,14 @@ template {
     float: right;
   }
   .main-nav__item--menu {
-    width: 188px;
+    min-width: 189px;
+    font-size: 16px;
   }
   .main-nav__item--menu:nth-child(n+3) {
     display: inline-block;
     padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 14px;
   }
 }
 .products {
@@ -577,6 +585,11 @@ template {
   color: #000000;
   text-align: center;
 }
+.products__nav::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .products__link {
   display: block;
   box-sizing: border-box;
@@ -596,7 +609,6 @@ template {
 }
 @media (min-width: 768px) {
   .products {
-    margin-bottom: 50px;
     padding-top: 160px;
     background: #fafafa url(../img/hero-desktop.jpg) no-repeat top center;
   }
@@ -613,9 +625,6 @@ template {
   }
 }
 @media (min-width: 1150px) {
-  .products {
-    margin-bottom: 70px;
-  }
   .products__title {
     font-size: 50px;
     line-height: 57px;
@@ -691,9 +700,13 @@ template {
 }
 @media (min-width: 768px) {
   .goods-promo {
-    position: relative;
-    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 70px;
     min-height: 608px;
+  }
+  .goods-promo__wrapper {
+    position: relative;
+    padding: 0;
   }
   .goods-promo__title {
     margin-bottom: 55px;
@@ -740,10 +753,11 @@ template {
 @media (min-width: 1150px) {
   .goods-promo {
     min-height: 792px;
+    padding-top: 70px;
   }
-  .goods-promo .container {
-    padding-top: 60px;
-    padding-left: 175px;
+  .goods-promo__wrapper {
+    padding: 0 175px;
+    padding-top: 45px;
   }
   .goods-promo__title {
     position: relative;
