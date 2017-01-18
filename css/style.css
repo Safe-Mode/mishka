@@ -1001,6 +1001,8 @@ template {
 .contacts__map {
   width: 320px;
   margin: 0 auto;
+  position: relative;
+  margin: 0 -30px;
   margin-bottom: 40px;
   height: 455px;
 }
@@ -1032,6 +1034,7 @@ template {
   }
   .contacts__map {
     width: 768px;
+    margin: 0 -50px;
     margin-bottom: 55px;
   }
   .contacts__info {
@@ -1075,6 +1078,7 @@ template {
     top: 0;
     right: 0;
     width: 525px;
+    margin: 0;
   }
 }
 .page-footer {
