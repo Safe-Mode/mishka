@@ -914,7 +914,7 @@ template {
 }
 .reviews__item-text {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .reviews__author-name {
   font-style: normal;
@@ -947,7 +947,7 @@ template {
   }
 }
 @media (min-width: 1150px) {
-  .reviews .container {
+  .reviews__wrapper {
     width: 1050px;
     padding: 0 175px;
     padding-top: 85px;
@@ -1045,6 +1045,35 @@ template {
     width: 75px;
     vertical-align: top;
     border-collapse: collapse;
+  }
+}
+@media (min-width: 1150px) {
+  .contacts__wrapper {
+    position: relative;
+    box-sizing: border-box;
+    width: 1050px;
+    padding: 0 175px;
+  }
+  .contacts__title {
+    margin-bottom: 45px;
+    font-size: 50px;
+    line-height: 57px;
+  }
+  .contacts__info {
+    margin-bottom: 80px;
+  }
+  .contacts__info-param {
+    float: none;
+    height: 60px;
+  }
+  .contacts__info-value {
+    vertical-align: top;
+  }
+  .contacts__map {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    width: 525px;
   }
 }
 .page-footer {

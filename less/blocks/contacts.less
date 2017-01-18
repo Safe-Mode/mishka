@@ -84,3 +84,44 @@
     }
   }
 }
+
+@media @desktop-widths {
+  .contacts {
+
+    &__wrapper {
+      position: relative;
+
+      box-sizing: border-box;
+      width: 1050px;
+      padding: 0 175px;
+    }
+
+    &__title {
+      margin-bottom: 45px;
+
+      font-size: 50px;
+      line-height: 57px;
+    }
+
+    &__info {
+      margin-bottom: 80px;
+
+      &-param {
+        float: none;
+        height: 60px;
+      }
+
+      &-value {
+        vertical-align: top;
+      }
+    }
+
+    &__map {
+      position: absolute !important;
+      top: 0;
+      right: 0;
+
+      width: 525px;
+    }
+  }
+}
