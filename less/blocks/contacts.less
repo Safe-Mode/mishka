@@ -1,7 +1,7 @@
 .contacts {
   padding: 40px 0;
 
-  font-family: @contact-font;
+  font-family: @decor-font;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -40,5 +40,47 @@
 
     margin-bottom: 40px;
     height: 455px;
+  }
+}
+
+@media @tablet-widths {
+  .contacts {
+    padding: 50px 0;
+    padding-bottom: 55px;
+
+    font-size: 16px;
+    line-height: 30px;
+
+    &__wrapper {
+      box-sizing: content-box;
+      padding: 0 50px;
+    }
+
+    &__title {
+      margin-bottom: 50px;
+
+      font-size: 40px;
+      line-height: 50px;
+    }
+
+    &__map {
+      width: 768px;
+      margin-bottom: 55px;
+    }
+
+    &__info {
+      margin-bottom: 60px;
+
+      &-param {
+        float: left;
+        width: 330px;
+      }
+
+      &-title {
+        width: 75px;
+        vertical-align: top;
+        border-collapse: collapse;
+      }
+    }
   }
 }

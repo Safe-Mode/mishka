@@ -3,8 +3,32 @@
 
   &__wrapper {
     .container();
+    .clearfix();
 
     box-sizing: border-box;
-    padding: 0 30px; 
+    padding: 0 30px;
+  }
+
+  &__logo {
+    display: none;
+    width: 102px;
+    height: 34px;
+  }
+}
+
+@media @tablet-widths {
+  .page-footer {
+    box-sizing: content-box;
+    padding-top: 50px;
+    padding-bottom: 55px;
+
+    &__wrapper {
+      padding: 0;
+    }
+
+    &__logo {
+      display: block;
+      float: left;
+    }
   }
 }

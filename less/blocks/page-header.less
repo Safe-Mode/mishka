@@ -8,6 +8,13 @@
     position: relative;
   }
 
+  &__logo {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 114px;
+    height: 47px;
+  }
+
   &__delivery {
     display: none;
 
@@ -20,12 +27,31 @@
 
 @media @tablet-widths {
   .page-header {
+
+    &__logo {
+      float: left;
+    }
+
     &__delivery {
       position: absolute;
       right: 0;
       top: 106px;
 
       display: block;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .page-header {
+
+    &__logo {
+      position: absolute;
+      left: 50%;
+
+      float: none;
+
+      transform: translate(-50%);
     }
   }
 }
