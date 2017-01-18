@@ -1052,7 +1052,8 @@ template {
     position: relative;
     box-sizing: border-box;
     width: 1050px;
-    padding: 0 175px;
+    padding: 60px 175px;
+    padding-bottom: 105px;
   }
   .contacts__title {
     margin-bottom: 45px;
@@ -1117,6 +1118,11 @@ template {
   .page-footer__logo {
     display: block;
     float: left;
+  }
+}
+@media (min-width: 1150px) {
+  .page-footer__logo {
+    margin-right: 350px;
   }
 }
 .social {
