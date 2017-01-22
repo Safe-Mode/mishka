@@ -2,7 +2,7 @@
   background: #fafafa url(../img/hero-mobile.jpg) no-repeat top center;
 
   &__wrapper {
-    .container();
+    .container-fluid();
 
     padding-top: 90px;
   }
@@ -22,7 +22,9 @@
   }
 
   &__nav {
-    .clearfix();
+    // .clearfix();
+    display: flex;
+    flex-wrap: wrap;
   }
 
   &__link {
@@ -61,7 +63,7 @@
     }
 
     &__link {
-      float: left;
+      // float: left;
       width: 50%;
 
       font-size: 20px;

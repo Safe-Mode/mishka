@@ -7,12 +7,23 @@
   }
 }
 
+.container-fluid {
+  width: 100%;
+  min-width: 320px;
+
+  @media @tablet-widths {
+    width: 87%;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+
 .container() {
   width: 320px;
   margin: 0 auto;
 
   @media @tablet-widths {
-      width: 668px;
+      width: 768px;
   }
 
   @media @desktop-widths {

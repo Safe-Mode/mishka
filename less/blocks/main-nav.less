@@ -1,4 +1,7 @@
 .main-nav {
+  display: flex;
+  flex-wrap: wrap;
+
   font-family: @base-font;
   font-style: normal;
   font-weight: 700;
@@ -6,14 +9,14 @@
   line-height: 24px;
   color: @color-strong;
 
-
-
   &__list {
+    width: 100%;
     margin: 0;
     padding: 0;
   }
 
   &__user-list {
+    width: 100%;
     margin: 0;
     padding: 0;
   }
@@ -131,7 +134,8 @@
 
 @media @tablet-widths {
   .main-nav {
-    float: right;
+    // float: right;
+    justify-content: flex-end;
 
     &__toggle {
       display: none;
@@ -142,7 +146,13 @@
       top: 75px;
       left: 0;
 
+      width: auto;
+
       font-size: 0;
+    }
+
+    &__user-list {
+      width: auto;
     }
 
     &__item {
@@ -176,11 +186,11 @@
       top: 0;
       left: 0;
 
-      width: 450px;
+      max-width: 450px;
     }
 
     &__user-list {
-      float: right;
+      // float: right;
     }
 
     &__item {
