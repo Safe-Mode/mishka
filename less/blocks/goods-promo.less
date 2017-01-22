@@ -12,9 +12,6 @@
 
   &__wrapper {
     .container();
-
-    box-sizing: border-box;
-    padding: 0 30px;
   }
 
   &__title {
@@ -145,10 +142,10 @@
 
 @media @desktop-widths {
   .goods-promo {
-    min-height: 792px;
     padding-top: 70px;
 
     &__wrapper {
+      box-sizing: border-box;
       padding: 0 175px;
       padding-top: 45px;
     }

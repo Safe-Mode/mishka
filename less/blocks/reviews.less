@@ -12,7 +12,7 @@
   background-color: #ffffff;
 
   &__wrapper {
-    .container();
+    .container-fluid();
 
     box-sizing: border-box;
     padding: 0 30px;
@@ -48,16 +48,31 @@
   &__author-nick {
     color: @color-base;
   }
+
+  &__toggles {
+    margin-bottom: 40px;
+  }
+
+  &__prev,
+  &__next {
+    width: 50%;
+    height: 50px;
+    border: 1px solid #ececec;
+
+    font-size: 0;
+  }
 }
 
 @media @tablet-widths {
   .reviews {
-    padding-bottom: 0;
+    padding: 0;
 
     font-size: 16px;
 
     &__wrapper {
-      width: 768px;
+      position: relative;
+
+      width: 87%;
       padding: 0 50px;
       padding-top: 80px;
       padding-bottom: 180px;
@@ -72,8 +87,33 @@
       line-height: 50px;
     }
 
+    &__item {
+      margin-bottom: 0;
+    }
+
     &__author {
       width: 334px;
+    }
+
+    &__btn {
+      position: absolute;
+      top: 80px;
+      right: 0;
+
+      width: 175px;
+    }
+
+    &__toggles {
+      position: absolute;
+      right: 0;
+      bottom: 180px;
+
+      margin-bottom: 0;
+    }
+
+    &__prev,
+    &__next {
+      width: 135px;
     }
   }
 }
