@@ -1,9 +1,10 @@
 .page-footer {
+  text-align: center;
+
   background-color: #f1f1f1;
 
   &__wrapper {
-    .container();
-    .clearfix();
+    .container-fluid();
 
     box-sizing: border-box;
     padding: 0 30px;
@@ -18,26 +19,26 @@
 
 @media @tablet-widths {
   .page-footer {
-    box-sizing: content-box;
-    padding-top: 50px;
-    padding-bottom: 55px;
 
     &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 143px;
       padding: 0;
     }
 
     &__logo {
       display: block;
-      float: left;
     }
   }
 }
 
-@media @desktop-widths {
-  .page-footer {
-
-    &__logo {
-      margin-right: 350px;
-    }
-  }  
-}
+// @media @desktop-widths {
+//   .page-footer {
+//
+//     &__logo {
+//       margin-right: 350px;
+//     }
+//   }
+// }

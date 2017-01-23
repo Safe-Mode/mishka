@@ -11,7 +11,7 @@
   background-color: #ffffff;
 
   &__wrapper {
-    .container();
+    .container-fluid();
 
     box-sizing: border-box;
     padding: 0 30px;
@@ -36,8 +36,6 @@
   }
 
   &__map {
-    .container();
-
     position: relative;
 
     margin: 0 -30px;
@@ -55,8 +53,7 @@
     line-height: 30px;
 
     &__wrapper {
-      box-sizing: content-box;
-      padding: 0 50px;
+      padding: 0;
     }
 
     &__title {
@@ -67,16 +64,18 @@
     }
 
     &__map {
-      width: 768px;
-      margin: 0 -50px;
+      margin: 0 -7.485%;
       margin-bottom: 55px;
     }
 
     &__info {
       margin-bottom: 60px;
 
+      tbody {
+        display: flex;
+      }
+
       &-param {
-        float: left;
         width: 330px;
       }
 
@@ -86,19 +85,26 @@
         border-collapse: collapse;
       }
     }
+
+    &__btn {
+      display: block;
+      box-sizing: border-box;
+      width: 230px;
+      margin: 0 auto;
+    }
   }
 }
 
 @media @desktop-widths {
   .contacts {
+    padding: 70px 0;
+    padding-bottom: 45px;
 
     &__wrapper {
       position: relative;
 
       box-sizing: border-box;
-      width: 1050px;
       padding: 60px 175px;
-      padding-bottom: 105px;
     }
 
     &__title {
@@ -109,16 +115,24 @@
     }
 
     &__info {
-      margin-bottom: 80px;
+      margin-bottom: 85px;
+
+      tbody {
+        display: table;
+      }
 
       &-param {
-        float: none;
         height: 60px;
       }
 
       &-value {
         vertical-align: top;
       }
+    }
+
+    &__btn {
+      display: inline-block;
+      margin: 0;
     }
 
     &__map {
