@@ -495,6 +495,9 @@ img {
 @media (min-width: 768px) {
   .page-header__logo {
     position: absolute;
+    top: 5px;
+    width: 113px;
+    height: 46px;
     margin: 0;
   }
   .page-header__delivery {
@@ -506,8 +509,10 @@ img {
 }
 @media (min-width: 1150px) {
   .page-header__logo {
-    position: absolute;
     left: 50%;
+    width: 149px;
+    height: 72px;
+    padding: 0;
     transform: translate(-50%);
   }
 }
@@ -656,7 +661,7 @@ img {
   }
 }
 .products {
-  background: #fafafa url(../img/hero-mobile.jpg) no-repeat top center;
+  background: #fafafa url("../img/hero-mobile.jpg") no-repeat top center;
 }
 .products__wrapper {
   width: 100%;
@@ -708,10 +713,16 @@ img {
 .products__link--toys {
   background-color: #56c3b2;
 }
+@media (min-resolution: 1.5dppx) {
+  .products {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
+}
 @media (min-width: 768px) {
   .products {
     padding-top: 160px;
-    background: #fafafa url(../img/hero-desktop.jpg) no-repeat top center;
+    background: #fafafa url("../img/hero-desktop.jpg") no-repeat top center;
   }
   .products__title {
     margin-bottom: 380px;
@@ -722,6 +733,12 @@ img {
     width: 50%;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .products {
+    background-image: url("../img/hero-desktop@2x.jpg");
+    background-size: 1150px auto;
   }
 }
 @media (min-width: 1150px) {
@@ -743,6 +760,8 @@ img {
 .goods-promo__wrapper {
   width: 320px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 30px;
 }
 @media (min-width: 768px) {
   .goods-promo__wrapper {
@@ -782,10 +801,8 @@ img {
 }
 .goods-promo__image {
   margin-bottom: 25px;
-}
-.goods-promo__image-tablet,
-.goods-promo__image-desktop {
-  display: none;
+  width: 260px;
+  height: 315px;
 }
 .goods-promo__price {
   display: block;
@@ -803,6 +820,7 @@ img {
   }
   .goods-promo__wrapper {
     position: relative;
+    box-sizing: content-box;
     padding: 0 50px;
   }
   .goods-promo__title {
@@ -832,15 +850,8 @@ img {
     position: absolute;
     top: 115px;
     right: 50px;
-  }
-  .goods-promo__image-mobile {
-    display: none;
-  }
-  .goods-promo__image-tablet {
-    display: block;
-  }
-  .goods-promo__image__desktop {
-    display: none;
+    width: 333px;
+    height: 404px;
   }
   .goods-promo__price {
     width: 290px;
@@ -879,12 +890,8 @@ img {
     top: 0;
     right: 0;
     z-index: 1;
-  }
-  .goods-promo__image-tablet {
-    display: none;
-  }
-  .goods-promo__image-desktop {
-    display: block;
+    width: 525px;
+    height: 636px;
   }
 }
 .about-us {
@@ -1046,7 +1053,7 @@ img {
     padding: 0 50px;
     padding-top: 80px;
     padding-bottom: 180px;
-    background: #ffffff url(../img/review-bg.jpg) no-repeat left top;
+    background: #ffffff url("../img/review-bg.jpg") no-repeat left top;
   }
   .reviews__title {
     margin-bottom: 60px;
@@ -1074,6 +1081,12 @@ img {
   .reviews__prev,
   .reviews__next {
     width: 135px;
+  }
+}
+@media (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .reviews__wrapper {
+    background-image: url("../img/review-bg@2x.jpg");
+    background-size: 350px auto;
   }
 }
 @media (min-width: 1150px) {

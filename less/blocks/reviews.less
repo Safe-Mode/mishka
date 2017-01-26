@@ -76,7 +76,12 @@
       padding-top: 80px;
       padding-bottom: 180px;
 
-      background: #ffffff url(../img/review-bg.jpg) no-repeat left top;
+      background: #ffffff url("../img/review-bg.jpg") no-repeat left top;
+
+      @media @retina {
+        background-image: url("../img/review-bg@2x.jpg");
+        background-size: 350px auto;
+      }
     }
 
     &__title {
