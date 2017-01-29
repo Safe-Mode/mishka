@@ -460,6 +460,7 @@ img {
 }
 .page-header {
   display: flex;
+  border: 1px solid #ececec;
   background-color: #ffffff;
 }
 .page-header__wrapper {
@@ -504,6 +505,7 @@ img {
     position: absolute;
     right: 0;
     top: 106px;
+    z-index: 10;
     display: block;
   }
 }
@@ -620,6 +622,7 @@ img {
     position: absolute;
     top: 75px;
     left: 0;
+    z-index: 10;
     width: auto;
     font-size: 0;
   }
@@ -632,6 +635,7 @@ img {
     font-size: 16px;
     vertical-align: top;
     border-bottom: none;
+    border-left: 1px solid #ececec;
   }
   .main-nav__item--menu {
     min-width: 167px;
@@ -640,6 +644,10 @@ img {
   }
   .main-nav__item--menu:first-child {
     border-top: none;
+    border-left: none;
+  }
+  .main-nav__item--menu:nth-child(n+3) {
+    border-left: none;
   }
 }
 @media (min-width: 1150px) {
@@ -721,8 +729,21 @@ img {
 }
 @media (min-width: 768px) {
   .products {
+    position: relative;
     padding-top: 160px;
     background: #fafafa url("../img/hero-desktop.jpg") no-repeat top center;
+  }
+  .products::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 24px;
+    background-image: url("../img/zigzag-fill-desktop.svg");
+    background-size: contain;
+    background-position: center;
+    transform: translateY(50%);
   }
   .products__title {
     margin-bottom: 380px;
@@ -738,16 +759,19 @@ img {
 @media (min-width: 768px) and (min-resolution: 1.5dppx) {
   .products {
     background-image: url("../img/hero-desktop@2x.jpg");
-    background-size: 1150px auto;
   }
 }
 @media (min-width: 1150px) {
+  .products::after {
+    height: 34px;
+  }
   .products__title {
     font-size: 50px;
     line-height: 57px;
   }
 }
 .goods-promo {
+  position: relative;
   padding: 30px 0;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
@@ -756,6 +780,26 @@ img {
   line-height: 24px;
   color: #444444;
   background-color: #ffffff;
+}
+.goods-promo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-image: url("../img/zigzag-desktop.svg");
+  background-size: contain;
+}
+@media (min-width: 768px) {
+  .goods-promo::after {
+    height: 17px;
+  }
+}
+@media (min-width: 1150px) {
+  .goods-promo::after {
+    height: 23px;
+  }
 }
 .goods-promo__wrapper {
   width: 320px;
@@ -980,6 +1024,7 @@ img {
   }
 }
 .reviews {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 45px;
   font-family: "Open Sans", sans-serif;
@@ -989,6 +1034,26 @@ img {
   line-height: 30px;
   color: #444444;
   background-color: #ffffff;
+}
+.reviews::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 6px;
+  background-image: url("../img/zigzag-desktop.svg");
+  background-size: contain;
+}
+@media (min-width: 768px) {
+  .reviews::after {
+    height: 17px;
+  }
+}
+@media (min-width: 1150px) {
+  .reviews::after {
+    height: 23px;
+  }
 }
 .reviews__wrapper {
   width: 100%;

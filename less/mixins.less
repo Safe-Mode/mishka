@@ -26,3 +26,27 @@
   }
 
 }
+
+.zigzag() {
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../img/zigzag-desktop.svg");
+    background-size: contain;
+
+    @media @tablet-widths {
+      height: 17px;
+    }
+
+    @media @desktop-widths {
+      height: 23px;
+    }
+  }
+}
