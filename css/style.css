@@ -640,14 +640,14 @@ img {
   .main-nav__item--menu {
     min-width: 167px;
     padding-left: 0;
+    border: none;
     font-size: 14px;
   }
   .main-nav__item--menu:first-child {
-    border-top: none;
-    border-left: none;
+    border: none;
   }
-  .main-nav__item--menu:nth-child(n+3) {
-    border-left: none;
+  .main-nav__item--menu:nth-child(even) {
+    padding-left: 35px;
   }
 }
 @media (min-width: 1150px) {
@@ -660,6 +660,9 @@ img {
   .main-nav__item--menu {
     min-width: 189px;
     font-size: 16px;
+  }
+  .main-nav__item--menu:first-child {
+    border-right: 1px solid #ececec;
   }
   .main-nav__item--menu:nth-child(n+3) {
     display: inline-block;
