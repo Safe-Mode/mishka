@@ -15,6 +15,33 @@
     width: 102px;
     height: 34px;
   }
+
+  &__copyright {
+    padding: 30px 0;
+
+    font-family: @base-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    color: @color-strong;
+
+    background-color: #f1f1f1;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-left: 20px;
+
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+  }
+
+  &__icon {
+    width: 27px;
+    height: 34px;
+  }
 }
 
 @media @tablet-widths {
@@ -30,6 +57,10 @@
 
     &__logo {
       display: block;
+    }
+
+    &__copyright {
+      padding: 0;
     }
   }
 }

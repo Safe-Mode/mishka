@@ -3,11 +3,40 @@
 
   background-color: #f1f1f1;
   border-bottom: 1px solid #e5e5e5;
+
+  &__link {
+    display: inline-block;
+    margin-right: 40px;
+
+    font-size: 0;
+    vertical-align: middle;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__icon {
+
+    &--insta {
+      width: 22px;
+      height: 21px;
+    }
+
+    &--fb {
+      width: 15px;
+      height: 29px;
+    }
+
+    &--tw {
+      width: 24px;
+      height: 20px;
+    }
+  }
 }
 
 @media @tablet-widths {
   .social {
-    // float: left;
     padding: 0;
     border: none;
   }

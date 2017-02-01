@@ -539,6 +539,7 @@ img {
   padding: 0;
 }
 .main-nav__item {
+  position: relative;
   padding: 30px;
   padding-left: 75px;
   list-style: none;
@@ -554,6 +555,13 @@ img {
 .main-nav__link {
   color: inherit;
   text-decoration: none;
+}
+.main-nav__icon {
+  position: absolute;
+  top: 33px;
+  left: 30px;
+  display: inline-block;
+  opacity: 0.2;
 }
 @media (max-width: 767px) {
   .main-nav__toggle {
@@ -628,6 +636,7 @@ img {
   }
   .main-nav__user-list {
     width: auto;
+    font-size: 0;
   }
   .main-nav__item {
     display: inline-block;
@@ -648,6 +657,10 @@ img {
   }
   .main-nav__item--menu:nth-child(even) {
     padding-left: 35px;
+  }
+  .main-nav__link--search {
+    font-size: 0;
+    line-height: 0;
   }
 }
 @media (min-width: 1150px) {
@@ -708,6 +721,7 @@ img {
   flex-wrap: wrap;
 }
 .products__link {
+  position: relative;
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -723,6 +737,11 @@ img {
 }
 .products__link--toys {
   background-color: #56c3b2;
+}
+.products__icon {
+  position: absolute;
+  top: 30px;
+  right: 35px;
 }
 @media (min-resolution: 1.5dppx) {
   .products {
@@ -747,6 +766,7 @@ img {
     background-size: contain;
     background-position: center;
     transform: translateY(50%);
+    background-repeat: repeat-x;
   }
   .products__title {
     margin-bottom: 380px;
@@ -793,6 +813,7 @@ img {
   height: 6px;
   background-image: url("../img/zigzag-desktop.svg");
   background-size: contain;
+  background-repeat: repeat-x;
 }
 @media (min-width: 768px) {
   .goods-promo::after {
@@ -979,6 +1000,7 @@ img {
   padding: 0;
 }
 .about-us__item {
+  position: relative;
   padding-top: 55px;
   margin-bottom: 35px;
   list-style: none;
@@ -987,8 +1009,25 @@ img {
   margin: 0;
   padding: 0;
 }
-.about-us__item:last-child {
-  margin-bottom: 0;
+.about-us__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.about-us__icon-1 {
+  left: 14px;
+}
+.about-us__icon-2 {
+  left: 9px;
+}
+.about-us__icon-3 {
+  left: 6px;
+}
+.about-us__icon-5 {
+  left: 13px;
+}
+.about-us__icon-6 {
+  left: 9px;
 }
 @media (min-width: 768px) {
   .about-us {
@@ -1012,6 +1051,9 @@ img {
   }
   .about-us__item {
     margin-bottom: 60px;
+  }
+  .about-us__item:last-child {
+    margin-bottom: 0;
   }
 }
 @media (min-width: 1150px) {
@@ -1047,6 +1089,7 @@ img {
   height: 6px;
   background-image: url("../img/zigzag-desktop.svg");
   background-size: contain;
+  background-repeat: repeat-x;
 }
 @media (min-width: 768px) {
   .reviews::after {
@@ -1108,8 +1151,12 @@ img {
 .reviews__next {
   width: 50%;
   height: 50px;
+  padding: 0;
   border: 1px solid #ececec;
   font-size: 0;
+}
+.reviews__next {
+  border-left: none;
 }
 @media (min-width: 768px) {
   .reviews {
@@ -1148,7 +1195,8 @@ img {
   }
   .reviews__prev,
   .reviews__next {
-    width: 135px;
+    width: 87.5px;
+    border: none;
   }
 }
 @media (min-width: 768px) and (min-resolution: 1.5dppx) {
@@ -1213,6 +1261,9 @@ img {
   font-size: 24px;
   color: #000000;
 }
+.contacts__icon {
+  display: none;
+}
 .contacts__info {
   margin-bottom: 30px;
 }
@@ -1227,18 +1278,26 @@ img {
 }
 @media (min-width: 768px) {
   .contacts {
-    padding: 50px 0;
-    padding-bottom: 55px;
+    padding: 55px 0;
     font-size: 16px;
     line-height: 30px;
   }
   .contacts__wrapper {
+    position: relative;
     padding: 0;
   }
   .contacts__title {
     margin-bottom: 50px;
     font-size: 40px;
     line-height: 50px;
+  }
+  .contacts__icon {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    display: block;
+    width: 47px;
+    height: 81px;
   }
   .contacts__map {
     margin: 0 -7.485%;
@@ -1331,6 +1390,27 @@ img {
   width: 102px;
   height: 34px;
 }
+.page-footer__copyright {
+  padding: 30px 0;
+  font-family: "Verdana", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #f1f1f1;
+}
+.page-footer__link {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 0;
+  line-height: 0;
+  vertical-align: middle;
+}
+.page-footer__icon {
+  width: 27px;
+  height: 34px;
+}
 @media (min-width: 768px) {
   .page-footer__wrapper {
     display: flex;
@@ -1342,11 +1422,35 @@ img {
   .page-footer__logo {
     display: block;
   }
+  .page-footer__copyright {
+    padding: 0;
+  }
 }
 .social {
   padding: 25px 0;
   background-color: #f1f1f1;
   border-bottom: 1px solid #e5e5e5;
+}
+.social__link {
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 0;
+  vertical-align: middle;
+}
+.social__link:last-child {
+  margin-right: 0;
+}
+.social__icon--insta {
+  width: 22px;
+  height: 21px;
+}
+.social__icon--fb {
+  width: 15px;
+  height: 29px;
+}
+.social__icon--tw {
+  width: 24px;
+  height: 20px;
 }
 @media (min-width: 768px) {
   .social {

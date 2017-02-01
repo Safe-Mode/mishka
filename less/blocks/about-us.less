@@ -32,6 +32,8 @@
   }
 
   &__item {
+    position: relative;
+
     padding-top: 55px;
     margin-bottom: 35px;
 
@@ -41,9 +43,31 @@
       margin: 0;
       padding: 0;
     }
+  }
 
-    &:last-child {
-      margin-bottom: 0;
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &-1 {
+      left: 14px;
+    }
+
+    &-2 {
+      left: 9px;
+    }
+
+    &-3 {
+      left: 6px;
+    }
+
+    &-5 {
+      left: 13px;
+    }
+
+    &-6 {
+      left: 9px;
     }
   }
 }
@@ -71,12 +95,15 @@
     }
 
     &__list {
-      // float: left;
       width: 334px;
     }
 
     &__item {
       margin-bottom: 60px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
