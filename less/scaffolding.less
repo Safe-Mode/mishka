@@ -47,4 +47,18 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+
+  transition: background-color 0.5s, color 0.5s;
+
+  &:hover {
+    background-color: #444444;
+    color: #ffffff;
+
+    transition: background-color 0.5s, color 0.5s;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    transition: color 0.5s;
+  }
 }

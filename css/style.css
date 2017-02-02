@@ -457,6 +457,16 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
+  transition: background-color 0.5s, color 0.5s;
+}
+.btn:hover {
+  background-color: #444444;
+  color: #ffffff;
+  transition: background-color 0.5s, color 0.5s;
+}
+.btn:active {
+  color: rgba(255, 255, 255, 0.3);
+  transition: color 0.5s;
 }
 .page-header {
   display: flex;
@@ -755,16 +765,37 @@ img {
   line-height: 24px;
   color: #ffffff;
   text-decoration: none;
-  background-color: #63d1bb;
 }
 .products__link--toys {
   background-color: #56c3b2;
+}
+.products__link--toys:hover {
+  background-color: #46c1ae;
+}
+.products__link--interior {
+  background-color: #63d1bb;
+}
+.products__link--interior:hover {
+  background-color: #59d5bc;
+}
+.products__link:hover svg {
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+.products__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+.products__link:active svg {
+  opacity: 0.3;
+  transition: opacity 0.5s;
 }
 .products__icon {
   position: absolute;
   top: 30px;
   right: 35px;
   fill: #149080;
+  opacity: 0.5;
+  transition: opacity 0.5s;
 }
 @media (min-resolution: 1.5dppx) {
   .products {
@@ -781,7 +812,7 @@ img {
   .products::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     display: block;
     width: 100%;
     height: 24px;
@@ -798,8 +829,14 @@ img {
   }
   .products__link {
     width: 50%;
+    padding-bottom: 35px;
     font-size: 20px;
     line-height: 30px;
+    transition: transform 0.5s;
+  }
+  .products__link:hover {
+    transform: translateY(-5px);
+    transition: transform 0.5s;
   }
 }
 @media (min-width: 768px) and (min-resolution: 1.5dppx) {
@@ -929,6 +966,9 @@ img {
     right: 50px;
     width: 80px;
   }
+  .goods-promo__status br {
+    display: inline;
+  }
   .goods-promo__description {
     width: 290px;
     margin-bottom: 50px;
@@ -959,6 +999,7 @@ img {
 @media (min-width: 1150px) {
   .goods-promo {
     padding-top: 70px;
+    padding-bottom: 95px;
   }
   .goods-promo__wrapper {
     box-sizing: border-box;

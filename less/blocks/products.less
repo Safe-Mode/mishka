@@ -42,10 +42,37 @@
     color: #ffffff;
     text-decoration: none;
 
-    background-color: @color-theme;
-
     &--toys {
       background-color: @color-theme--darker;
+
+      &:hover {
+        background-color: #46c1ae;
+      }
+    }
+
+    &--interior {
+      background-color: @color-theme;
+
+      &:hover {
+        background-color: #59d5bc;
+      }
+    }
+
+    &:hover {
+
+      svg {
+        opacity: 0.7;
+        transition: opacity 0.5s;
+      }
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+
+      svg {
+        opacity: 0.3;
+        transition: opacity 0.5s;
+      }
     }
   }
 
@@ -55,6 +82,8 @@
     right: 35px;
 
     fill: #149080;
+    opacity: 0.5;
+    transition: opacity 0.5s;
   }
 
   @media @retina {
@@ -74,7 +103,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 0;
+      bottom: 5px;
 
       display: block;
       width: 100%;
@@ -96,9 +125,16 @@
 
     &__link {
       width: 50%;
+      padding-bottom: 35px;
 
       font-size: 20px;
       line-height: 30px;
+      transition: transform 0.5s;
+
+      &:hover {
+        transform: translateY(-5px);
+        transition: transform 0.5s;
+      }
     }
 
     @media @retina {
