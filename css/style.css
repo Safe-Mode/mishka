@@ -485,6 +485,13 @@ img {
   padding: 16px 0;
   width: 114px;
   height: 47px;
+  transition: opacity 0.4s;
+}
+.page-header__logo:hover {
+  opacity: 0.6;
+}
+.page-header__logo:active {
+  opacity: 0.3;
 }
 .page-header__delivery {
   display: none;
@@ -544,6 +551,21 @@ img {
   padding-left: 75px;
   list-style: none;
   border-bottom: 1px solid #ececec;
+}
+.main-nav__item:hover a {
+  opacity: 0.6;
+  transition: opacity 0.4s;
+}
+.main-nav__item:hover svg {
+  opacity: 1;
+  fill: #63d1bb;
+  transition: opacity 0.5s, fill 0.4s;
+}
+.main-nav__item:active a {
+  opacity: 0.3;
+}
+.main-nav__item:active svg {
+  opacity: 0.3;
 }
 .main-nav__item--menu:first-child {
   border-top: 1px solid #ececec;

@@ -30,6 +30,32 @@
     list-style: none;
     border-bottom: 1px solid #ececec;
 
+    &:hover {
+
+      a {
+        opacity: 0.6;
+        transition: opacity 0.4s;
+      }
+
+      svg {
+        opacity: 1;
+        fill: @color-theme;
+
+        transition: opacity 0.5s, fill 0.4s;
+      }
+    }
+
+    &:active {
+
+      a {
+        opacity: 0.3;
+      }
+
+      svg {
+        opacity: 0.3;
+      }
+    }
+
     &--menu {
 
       &:first-child {
@@ -218,6 +244,7 @@
     }
 
     &__item {
+
       &--menu {
         min-width: 189px;
 
