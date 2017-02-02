@@ -742,6 +742,7 @@ img {
   position: absolute;
   top: 30px;
   right: 35px;
+  fill: #149080;
 }
 @media (min-resolution: 1.5dppx) {
   .products {
@@ -858,6 +859,9 @@ img {
   color: #63d1bb;
   text-transform: uppercase;
 }
+.goods-promo__status br {
+  display: none;
+}
 .goods-promo__params {
   margin-bottom: 30px;
   line-height: 20px;
@@ -946,7 +950,7 @@ img {
     line-height: 57px;
   }
   .goods-promo__status {
-    top: 70px;
+    top: 62px;
     left: 0;
     width: 175px;
     text-align: center;
@@ -1014,6 +1018,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  fill: #63d1bb;
 }
 .about-us__icon-1 {
   left: 14px;
@@ -1411,6 +1416,7 @@ img {
 .page-footer__icon {
   width: 27px;
   height: 34px;
+  fill: #63d1bb;
 }
 @media (min-width: 768px) {
   .page-footer__wrapper {
