@@ -1291,8 +1291,17 @@ img {
 .slider__toggle {
   display: inline-block;
   box-sizing: border-box;
+  border: none;
   vertical-align: top;
   background-color: inherit;
+  cursor: pointer;
+  outline: none;
+}
+.slider__toggle:hover svg {
+  opacity: 0.6;
+}
+.slider__toggle:active svg {
+  opacity: 0.3;
 }
 .contacts {
   padding: 40px 0;
@@ -1463,6 +1472,15 @@ img {
   width: 102px;
   height: 34px;
 }
+.page-footer__logo svg {
+  transition: opacity 0.5s, fill 0.5s;
+}
+.page-footer__logo:hover svg {
+  fill: #46c1ae;
+}
+.page-footer__logo:active svg {
+  opacity: 0.3;
+}
 .page-footer__copyright {
   padding: 30px 0;
   font-family: "Verdana", sans-serif;
@@ -1472,6 +1490,18 @@ img {
   line-height: 18px;
   color: #000000;
   background-color: #f1f1f1;
+  transition: opacity 0.5s;
+}
+.page-footer__copyright svg {
+  transition: fill 0.5s;
+}
+.page-footer__copyright:hover svg {
+  fill: #46c1ae;
+  transition: 0.5s;
+}
+.page-footer__copyright:active {
+  opacity: 0.3;
+  transition: opacity 0.5s;
 }
 .page-footer__link {
   display: inline-block;
@@ -1510,9 +1540,18 @@ img {
   margin-right: 40px;
   font-size: 0;
   vertical-align: middle;
+  transition: opacity 0.5s, fill 0.5s;
 }
 .social__link:last-child {
   margin-right: 0;
+}
+.social__link:hover {
+  fill: #46c1ae;
+  transition: fill 0.5s;
+}
+.social__link:active {
+  opacity: 0.3;
+  transition: opacity 0.5s;
 }
 .social__icon--insta {
   width: 22px;

@@ -7,9 +7,24 @@
   &__toggle {
     display: inline-block;
     box-sizing: border-box;
+    border: none;
 
     vertical-align: top;
 
     background-color: inherit;
+    cursor: pointer;
+    outline: none;
+
+    &:hover {
+      svg {
+        opacity: 0.6;
+      }
+    }
+
+    &:active {
+      svg {
+        opacity: 0.3;
+      }
+    }
   }
 }

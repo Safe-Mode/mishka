@@ -14,6 +14,22 @@
     display: none;
     width: 102px;
     height: 34px;
+
+    svg {
+      transition: opacity 0.5s, fill 0.5s;
+    }
+
+    &:hover {
+      svg {
+        fill: #46c1ae;
+      }
+    }
+
+    &:active {
+      svg {
+        opacity: 0.3;
+      }
+    }
   }
 
   &__copyright {
@@ -27,6 +43,23 @@
     color: @color-strong;
 
     background-color: #f1f1f1;
+    transition: opacity 0.5s;
+
+    svg {
+      transition: fill 0.5s;
+    }
+
+    &:hover {
+      svg {
+        fill: #46c1ae;
+        transition: 0.5s;
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+      transition: opacity 0.5s;
+    }
   }
 
   &__link {
