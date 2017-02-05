@@ -1313,11 +1313,16 @@ img {
   cursor: pointer;
   outline: none;
 }
+.slider__toggle svg {
+  transition: opacity 0.5s;
+}
 .slider__toggle:hover svg {
   opacity: 0.6;
+  transition: opacity 0.5s;
 }
 .slider__toggle:active svg {
   opacity: 0.3;
+  transition: opacity 0.5s;
 }
 .contacts {
   padding: 40px 0;
