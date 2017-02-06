@@ -1369,6 +1369,19 @@ img {
 .contacts__info-title {
   font-family: "Open Sans", sans-serif;
 }
+.contacts__info-value--email a {
+  border-bottom: 1px solid #62d1ba;
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.5s, opacity 0.5s;
+}
+.contacts__info-value--email a:hover {
+  color: #62d1ba;
+}
+.contacts__info-value--email a:active {
+  opacity: 0.3;
+}
 .contacts__map {
   position: relative;
   margin: 0 -30px;
