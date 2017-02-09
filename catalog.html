@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Каталог</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Логотип Мишка">
+        </picture>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--no-js">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--menu">
+            <a class="main-nav__link main-nav__link--menu" href="#">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item main-nav__item--menu">
+            <a class="main-nav__link main-nav__link--menu" href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item main-nav__item--menu">
+            <a class="main-nav__link main-nav__link--menu" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--menu">
+            <a class="main-nav__link main-nav__link--menu" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link main-nav__link--search" href="#">
+              Поиск по сайту
+            </a>
+            <svg class="main-nav__icon main-nav__icon--search" width="18" height="19">
+              <use xlink:href="#search"></use>
+            </svg>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Корзина: <span>пока пуста</span>
+            </a>
+            <svg class="main-nav__icon main-nav__icon--cart" width="21" height="18">
+              <use xlink:href="#cart"></use>
+            </svg>
+          </li>
+        </ul>
+      </nav>
+      <span class="page-header__delivery">Бесплатная доставка по России</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-intro">
+      <h1 class="page-intro__title">Каталог товаров</h1>
+    </div>
+
+    <article class="catalog-item">
+      <div class="catalog-item__image">
+        <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
+      </div>
+      <section class="catalog-item__description">
+        <h2 class="catalog-item__title">Зайчик-попрыгайчик</h2>
+        <p class="catalog-item__properties">Рост 30 см, вес 200 г</p>
+        <a href="#" class="catalog-item__price">
+          1 200 руб.
+          <svg class="icon icon--cart" width="21" height="18">
+            <use xlink:href="#cart"></use>
+          </svg>
+        </a>
+      </section>
+    </article>
+
+    <article class="catalog-item">
+      <div class="catalog-item__image">
+        <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Корзинка для белья">
+      </div>
+      <section class="catalog-item__description">
+        <h2 class="catalog-item__title">Корзинка для белья</h2>
+        <p class="catalog-item__properties">Диаметр 15 см, высота 10 см</p>
+        <a href="#" class="catalog-item__price">
+          690 руб.
+          <svg class="icon icon--cart" width="21" height="18">
+            <use xlink:href="#cart"></use>
+          </svg>
+        </a>
+      </section>
+    </article>
+
+    <article class="catalog-item">
+      <div class="catalog-item__image">
+        <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
+      </div>
+      <section class="catalog-item__description">
+        <h2 class="catalog-item__title">Большая корзинка для игрушек</h2>
+        <p class="catalog-item__properties">Диаметр 30 см, высота 30 см</p>
+        <a href="#" class="catalog-item__price">
+          1 500 руб.
+          <svg class="icon icon--cart" width="21" height="18">
+            <use xlink:href="#cart"></use>
+          </svg>
+        </a>
+      </section>
+    </article>
+
+    <article class="presentation presentation--production">
+      <h2 class="presentation__title">
+        Процесс производства
+        <svg class="icon icon--video" width="32" height="22">
+          <use xlink:href="#video"></use>
+        </svg>
+      </h2>
+      <div class="presentation__media">
+        <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
+        <svg class="icon icon--play" width="101" height="77">
+          <use xlink:href="#play"></use>
+        </svg>
+      </div>
+      <p class="presentation__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+      <a href="#" class="btn">Сделать заказ</a>
+    </article>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <svg class="logo-footer" width="102" height="34">
+          <use xlink:href="#logo-footer"></use>
+        </svg>
+      </div>
+      <section class="social">
+        <a href="#" class="social__link social__link--insta">
+          instagram
+          <svg class="social__icon social__icon--insta">
+            <use xlink:href="#insta"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link social__link--fb">
+          facebook
+          <svg class="social__icon social__icon--fb">
+            <use xlink:href="#fb"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link social__link--tw">
+          twitter
+          <svg class="social__icon social__icon--tw">
+            <use xlink:href="#tw"></use>
+          </svg>
+        </a>
+      </section>
+      <section class="page-footer__copyright">
+        Разработано
+        <a href="#" class="page-footer__link page-footer__link--copyright">
+          HTML Academy
+          <svg class="page-footer__icon page-footer__icon--copyright">
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </a>
+      </section>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
