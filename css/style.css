@@ -468,6 +468,11 @@ img {
   color: rgba(255, 255, 255, 0.3);
   transition: color 0.5s;
 }
+.icon--cart {
+  width: 21px;
+  height: 18px;
+  opacity: 0.2;
+}
 .page-header {
   display: flex;
   border: 1px solid #ececec;
@@ -1678,4 +1683,58 @@ img {
     font-size: 50px;
     line-height: 57px;
   }
+}
+.catalog-main__wrapper {
+  width: 100%;
+  min-width: 320px;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+@media (min-width: 768px) {
+  .catalog-main__wrapper {
+    width: 87%;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1150px) {
+  .catalog-main__wrapper {
+    width: 91.3%;
+  }
+}
+.catalog-item__description {
+  padding: 0 30px;
+  margin-bottom: 30px;
+  border: 1px solid #ececec;
+}
+.catalog-item__image {
+  font-size: 0;
+  background-color: #e5e5e7;
+}
+.catalog-item__title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-family: "Verdana", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+.catalog-item__properties {
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  color: #444444;
+}
+.catalog-item__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 73px;
+  border-top: 1px solid #ececec;
+  font-family: "Verdana", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
 }
