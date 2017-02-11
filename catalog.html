@@ -133,20 +133,25 @@
       </section>
 
       <article class="presentation presentation--production">
-        <h2 class="presentation__title">
-          Процесс производства
+        <div class="presentation__title-wrapper">
           <svg class="icon icon--video" width="32" height="22">
             <use xlink:href="#video"></use>
           </svg>
-        </h2>
+          <h2 class="presentation__title">
+            Процесс производства
+          </h2>
+        </div>
         <div class="presentation__media">
           <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
-          <svg class="icon icon--play" width="101" height="77">
-            <use xlink:href="#play"></use>
-          </svg>
+          <button class="presentation__play">
+            Воспроизвести
+            <svg class="icon icon--play" width="102" height="78">
+              <use xlink:href="#play"></use>
+            </svg>
+          </button>
         </div>
         <p class="presentation__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <a href="#" class="btn">Сделать заказ</a>
+        <a href="#" class="btn presentation__order-link">Сделать заказ</a>
       </article>
     </div>
   </main>
