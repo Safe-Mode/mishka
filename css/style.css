@@ -1810,7 +1810,7 @@ img {
 .presentation__title {
   margin: 0;
   margin-left: 25px;
-  flex-basis: 130px;
+  flex-basis: 69%;
   font-family: "Verdana", sans-serif;
   font-size: 16px;
   line-height: 24px;
