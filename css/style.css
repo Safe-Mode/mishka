@@ -1751,6 +1751,7 @@ img {
 }
 @media (min-width: 768px) {
   .catalog-item {
+    margin-bottom: 55px;
     display: flex;
   }
   .catalog-item > * {
