@@ -1,13 +1,13 @@
 .presentation {
   padding: 35px;
-  padding-top: 25px;
+  padding-top: 0;
   margin-bottom: 60px;
   border: 1px solid #ececec;
 
   &__title-wrapper {
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin: 25px 0;
   }
 
   &__title {
@@ -23,6 +23,7 @@
   &__media {
     position: relative;
     margin: 0 -35px;
+    font-size: 0;
   }
 
   &__play {
@@ -54,5 +55,37 @@
   &__order-link {
     font-family: @decor-font;
     color: @color-base;
+  }
+}
+
+@media @tablet-widths {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    padding-top: 0;
+
+    &__media {
+      order: -1;
+      margin: 0 -45px;
+      // border-bottom: 1px solid #ececec;
+    }
+
+    &__title-wrapper {
+      margin: 35px 0;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__description {
+      margin-top: 0;
+      margin-bottom: 35px;
+
+      font-size: 16px;
+      line-height: 30px;
+    }
   }
 }

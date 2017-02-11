@@ -142,7 +142,10 @@
           </h2>
         </div>
         <div class="presentation__media">
-          <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства">
+          </picture>
           <button class="presentation__play">
             Воспроизвести
             <svg class="icon icon--play" width="102" height="78">

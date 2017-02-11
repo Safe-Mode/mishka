@@ -1798,14 +1798,14 @@ img {
 }
 .presentation {
   padding: 35px;
-  padding-top: 25px;
+  padding-top: 0;
   margin-bottom: 60px;
   border: 1px solid #ececec;
 }
 .presentation__title-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
 .presentation__title {
   margin: 0;
@@ -1818,6 +1818,7 @@ img {
 .presentation__media {
   position: relative;
   margin: 0 -35px;
+  font-size: 0;
 }
 .presentation__play {
   position: absolute;
@@ -1842,4 +1843,29 @@ img {
 .presentation__order-link {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+}
+@media (min-width: 768px) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    padding-top: 0;
+  }
+  .presentation__media {
+    order: -1;
+    margin: 0 -45px;
+  }
+  .presentation__title-wrapper {
+    margin: 35px 0;
+  }
+  .presentation__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .presentation__description {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 30px;
+  }
 }
