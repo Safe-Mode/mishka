@@ -1869,3 +1869,11 @@ img {
     line-height: 30px;
   }
 }
+@media (min-width: 1150px) {
+  .presentation {
+    position: relative;
+  }
+  .presentation__media {
+    width: 683px;
+  }
+}
