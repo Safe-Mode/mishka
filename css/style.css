@@ -1771,3 +1771,16 @@ img {
     line-height: 24px;
   }
 }
+@media (min-width: 1150px) {
+  .catalog-item {
+    flex-direction: column;
+    flex-basis: 315px;
+  }
+}
+@media (min-width: 1150px) {
+  .catalog-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
