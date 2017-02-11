@@ -1,8 +1,8 @@
 .catalog-item {
+  margin-bottom: 30px;
 
   &__description {
     padding: 0 30px;
-    margin-bottom: 30px;
     border: 1px solid #ececec;
   }
 
@@ -13,7 +13,7 @@
 
   &__title {
     margin-top: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 
     font-family: @base-font;
     font-size: 16px;
@@ -21,6 +21,7 @@
   }
 
   &__properties {
+    margin: 0;
     margin-bottom: 20px;
 
     font-family: @decor-font;
@@ -42,5 +43,35 @@
     color: inherit;
     font-weight: 700;
     text-decoration: none;
+  }
+}
+
+@media @tablet-widths {
+  .catalog-item {
+    display: flex;
+
+    > * {
+      flex-basis: 50%;
+    }
+
+    &__description {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__properties {
+      font-size: 15px;
+    }
+
+    &__price {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 }
