@@ -28,21 +28,43 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     width: 102px;
     height: 78px;
     padding: 0;
     border: none;
+    margin-left: -51px;
+    margin-top: -39px;
 
     font-size: 0;
     text-align: center;
 
     background-color: transparent;
+    outline: none;
+    transition: all 0.5s;
+
+    &:hover {
+      cursor: pointer;
+
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(0.8);
+      opacity: 0.3;
+    }
   }
 
   &__text {
     padding: 35px;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   &__description {

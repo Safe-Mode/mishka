@@ -4,6 +4,16 @@
   &__description {
     padding: 0 30px;
     border: 1px solid #ececec;
+
+    transition: box-shadow 0.5s;
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
   }
 
   &__image {
@@ -43,6 +53,35 @@
     color: inherit;
     font-weight: 700;
     text-decoration: none;
+
+    span {
+      transition: opacity 0.5s;
+    }
+
+    svg {
+      transition: all 0.5s;
+    }
+
+    &:hover {
+      span {
+        opacity: 0.6;
+      }
+
+      svg {
+        opacity: 1;
+        fill: @color-theme;
+      }
+    }
+
+    &:active {
+      span {
+        opacity: 0.3;
+      }
+
+      svg {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
