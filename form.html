@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Вязание на заказ</title>
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <a href="index.html">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип Мишка">
+          </picture>
+        </a>
+      </div>
+      <nav class="main-nav main-nav--closed main-nav--no-js">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--menu">
+            <a class="main-nav__link main-nav__link--menu" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item main-nav__item--menu">
+            <a class="main-nav__link main-nav__link--menu" href="#">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item main-nav__item--menu">
+            <a class="main-nav__link main-nav__link--menu" href="#">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--menu">
+            <a class="main-nav__link main-nav__link--menu" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <ul class="main-nav__user-list">
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link main-nav__link--search" href="#">
+              Поиск по сайту
+            </a>
+            <svg class="main-nav__icon main-nav__icon--search" width="18" height="19">
+              <use xlink:href="#search"></use>
+            </svg>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">
+              Корзина: <span>пока пуста</span>
+            </a>
+            <svg class="main-nav__icon main-nav__icon--cart" width="21" height="18">
+              <use xlink:href="#cart"></use>
+            </svg>
+          </li>
+        </ul>
+      </nav>
+      <span class="page-header__delivery">Бесплатная доставка по России</span>
+    </div>
+  </header>
+
+  <main class="form-main">
+    <div class="page-intro">
+      <div class="page-intro__wrapper">
+        <h1 class="page-intro__title">Вязание на заказ</h1>
+      </div>
+    </div>
+
+    <section class="order">
+      <div class="order-wrapper">
+        <p class="description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+        <form action="/echo" class="order-form" method="post">
+          <fieldset class="order-form__group">
+            <legend class="order-form__capture">Тип</legend>
+            <div class="order-form__input">
+              <input type="radio" id="interior" checked>
+              <label for="interior">Аксессуар для интерьера</label>
+            </div>
+            <div class="order-form__input">
+              <input type="radio" id="toy">
+              <label for="toy">Детская игрушка</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="order-form__group">
+            <legend class="order-form__capture">Детская игрушка</legend>
+            <div class="order-form__input">
+              <input type="checkbox" id="white" checked>
+              <label for="white">Белый</label>
+            </div>
+            <div class="order-form__input">
+              <input type="checkbox" id="grey" checked>
+              <label for="grey">Серый</label>
+            </div>
+            <div class="order-form__input">
+              <input type="checkbox" id="tiffany">
+              <label for="tiffany">&laquo;Тиффани&raquo;</label>
+            </div>
+            <div class="order-form__input">
+              <input type="checkbox" id="black">
+              <label for="black">Чёрный</label>
+            </div>
+            <div class="order-form__input">
+              <input type="checkbox" id="pink">
+              <label for="pink">Розовый</label>
+            </div>
+            <div class="order-form__input">
+              <input type="checkbox" id="orange">
+              <label for="orange">Оранжевый</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="order-form__group">
+            <legend class="order-form__capture">ФИО</legend>
+            <div class="order-form__input">
+              <label for="surname">Фамилия:</label>
+              <input type="text" id="surname" placeholder="Укажите фамилию" required>
+            </div>
+            <div class="order-form__input">
+              <label for="name">Имя:</label>
+              <input type="text" id="name" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="order-form__input">
+              <label for="second-name">Отчество:</label>
+              <input type="text" id="second-name" placeholder="Отчество, если желаете">
+            </div>
+          </fieldset>
+
+          <fieldset class="order-form__group">
+            <legend class="order-form__capture">Тел</legend>
+            <input type="tel" placeholder="+7 ХХХ ХХ ХХ">
+          </fieldset>
+
+          <fieldset class="order-form__group">
+            <legend class="order-form__capture">e-mail</legend>
+            <input type="email" placeholder="Ваш e-mail">
+          </fieldset>
+
+          <fieldset class="order-form__group">
+            <legend class="order-form__capture">Доп</legend>
+            <textarea name="extra-info" rows="8" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <button class="btn" type="submit" name="order-submit">Отправить заказ</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+        <svg class="logo-footer" width="102" height="34">
+          <use xlink:href="#logo-footer"></use>
+        </svg>
+      </div>
+      <section class="social">
+        <a href="#" class="social__link social__link--insta">
+          instagram
+          <svg class="social__icon social__icon--insta">
+            <use xlink:href="#insta"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link social__link--fb">
+          facebook
+          <svg class="social__icon social__icon--fb">
+            <use xlink:href="#fb"></use>
+          </svg>
+        </a>
+        <a href="#" class="social__link social__link--tw">
+          twitter
+          <svg class="social__icon social__icon--tw">
+            <use xlink:href="#tw"></use>
+          </svg>
+        </a>
+      </section>
+      <section class="page-footer__copyright">
+        Разработано
+        <a href="#" class="page-footer__link page-footer__link--copyright">
+          HTML Academy
+          <svg class="page-footer__icon page-footer__icon--copyright">
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
+        </a>
+      </section>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
