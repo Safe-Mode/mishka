@@ -67,77 +67,77 @@
 
     <section class="order">
       <div class="order-wrapper">
-        <p class="description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
 
-        <form action="/echo" class="order-form" method="post">
-          <fieldset class="order-form__group">
-            <legend class="order-form__capture">Тип</legend>
-            <div class="order-form__input">
+        <form action="/echo" class="order__form" method="post">
+          <fieldset class="order__form-group">
+            <legend class="order__form-capture">Тип</legend>
+            <div class="order__form-input">
               <input type="radio" id="interior" checked>
               <label for="interior">Аксессуар для интерьера</label>
             </div>
-            <div class="order-form__input">
+            <div class="order__form-input">
               <input type="radio" id="toy">
               <label for="toy">Детская игрушка</label>
             </div>
           </fieldset>
 
-          <fieldset class="order-form__group">
-            <legend class="order-form__capture">Детская игрушка</legend>
-            <div class="order-form__input">
+          <fieldset class="order__form-group">
+            <legend class="order__form-capture">Детская игрушка</legend>
+            <div class="order__form-input">
               <input type="checkbox" id="white" checked>
               <label for="white">Белый</label>
             </div>
-            <div class="order-form__input">
+            <div class="order__form-input">
               <input type="checkbox" id="grey" checked>
               <label for="grey">Серый</label>
             </div>
-            <div class="order-form__input">
+            <div class="order__form-input">
               <input type="checkbox" id="tiffany">
               <label for="tiffany">&laquo;Тиффани&raquo;</label>
             </div>
-            <div class="order-form__input">
+            <div class="order__form-input">
               <input type="checkbox" id="black">
               <label for="black">Чёрный</label>
             </div>
-            <div class="order-form__input">
+            <div class="order__form-input">
               <input type="checkbox" id="pink">
               <label for="pink">Розовый</label>
             </div>
-            <div class="order-form__input">
+            <div class="order__form-input">
               <input type="checkbox" id="orange">
               <label for="orange">Оранжевый</label>
             </div>
           </fieldset>
 
-          <fieldset class="order-form__group">
-            <legend class="order-form__capture">ФИО</legend>
-            <div class="order-form__input">
+          <fieldset class="order__form-group">
+            <legend class="order__form-capture">ФИО</legend>
+            <div class="order__form-input">
               <label for="surname">Фамилия:</label>
               <input type="text" id="surname" placeholder="Укажите фамилию" required>
             </div>
-            <div class="order-form__input">
+            <div class="order__form-input">
               <label for="name">Имя:</label>
               <input type="text" id="name" placeholder="Введите ваше имя" required>
             </div>
-            <div class="order-form__input">
+            <div class="order__form-input">
               <label for="second-name">Отчество:</label>
               <input type="text" id="second-name" placeholder="Отчество, если желаете">
             </div>
           </fieldset>
 
-          <fieldset class="order-form__group">
-            <legend class="order-form__capture">Тел</legend>
+          <fieldset class="order__form-group">
+            <legend class="order__form-capture">Тел</legend>
             <input type="tel" placeholder="+7 ХХХ ХХ ХХ">
           </fieldset>
 
-          <fieldset class="order-form__group">
-            <legend class="order-form__capture">e-mail</legend>
+          <fieldset class="order__form-group">
+            <legend class="order__form-capture">e-mail</legend>
             <input type="email" placeholder="Ваш e-mail">
           </fieldset>
 
-          <fieldset class="order-form__group">
-            <legend class="order-form__capture">Доп</legend>
+          <fieldset class="order__form-group">
+            <legend class="order__form-capture">Доп</legend>
             <textarea name="extra-info" rows="8" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <button class="btn" type="submit" name="order-submit">Отправить заказ</button>
