@@ -1936,3 +1936,28 @@ img {
     padding-left: 75px;
   }
 }
+.order__wrapper {
+  width: 100%;
+  min-width: 320px;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+@media (min-width: 768px) {
+  .order__wrapper {
+    width: 87%;
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1150px) {
+  .order__wrapper {
+    width: 91.3%;
+  }
+}
+.order__description {
+  margin-bottom: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: #444444;
+}
