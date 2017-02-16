@@ -497,6 +497,33 @@ input[type="radio"]:checked + label .radio-indicator::before {
   border-radius: 50%;
   background-color: #62d1ba;
 }
+input[type="checkbox"] + label .checkbox-indicator {
+  position: relative;
+  min-width: 37px;
+  width: 37px;
+  height: 37px;
+  margin-right: 20px;
+  border: 2px solid #444444;
+}
+input[type="checkbox"] + label .checkbox-indicator::before,
+input[type="checkbox"] + label .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #000000;
+}
+input[type="checkbox"]:checked + label .checkbox-indicator::before {
+  top: 21px;
+  left: 5px;
+  width: 11px;
+  transform: rotate(45deg);
+}
+input[type="checkbox"]:checked + label .checkbox-indicator::after {
+  top: 18px;
+  left: 10px;
+  width: 23px;
+  transform: rotate(-45deg);
+}
 .icon--cart {
   width: 21px;
   height: 18px;
