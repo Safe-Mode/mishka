@@ -63,6 +63,10 @@ img {
   }
 }
 
+
+// Кастомные элементы
+
+// Радиокнопки
 input[type="radio"],
 input[type="checkbox"] {
   display: none;
@@ -101,6 +105,7 @@ input[type="radio"]:checked + label .radio-indicator::before {
   background-color: #62d1ba;
 }
 
+// Чекбоксы
 input[type="checkbox"] + label .checkbox-indicator {
   position: relative;
 
@@ -136,4 +141,21 @@ input[type="checkbox"]:checked + label .checkbox-indicator::after {
 
   width: 23px;
   transform: rotate(-45deg);
+}
+
+// Текстовые поля, телефона, email
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 15px 0;
+  border: none;
+  border-bottom: 2px solid #000000;
+
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  padding: 15px;
+  border: 2px solid @color-base;
 }

@@ -89,7 +89,7 @@
           </fieldset>
 
           <fieldset class="form__group">
-            <legend class="form__capture">Цвет</legend>
+            <legend class="form__capture form__capture--color">Цвет</legend>
             <div class="form__input">
               <input type="checkbox" id="white" checked>
               <label for="white">
@@ -135,7 +135,7 @@
           </fieldset>
 
           <fieldset class="form__group">
-            <legend class="form__capture">ФИО</legend>
+            <legend class="form__capture form__capture--full-name">ФИО</legend>
             <div class="form__input">
               <label for="surname">Фамилия:</label>
               <input type="text" id="surname" placeholder="Укажите фамилию" required>
@@ -156,15 +156,15 @@
           </fieldset>
 
           <fieldset class="form__group">
-            <legend class="form__capture">e-mail</legend>
+            <legend class="form__capture form__capture--email">e-mail</legend>
             <input type="email" placeholder="Ваш e-mail">
           </fieldset>
 
           <fieldset class="form__group">
             <legend class="form__capture">Доп</legend>
-            <textarea name="form__textarea" rows="8" cols="30" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea name="form__textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
-          <button class="btn" type="submit" name="order-submit">Отправить заказ</button>
+          <button class="btn form__submit" type="submit" name="order-submit">Отправить заказ</button>
         </form>
       </div>
     </section>

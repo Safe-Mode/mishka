@@ -1,24 +1,58 @@
 .form {
+  margin-bottom: 60px;
 
   &__group {
     margin: 0;
-    padding: 30px 0;
+    padding: 40px 0;
     border: none;
     border-top: 1px solid @color-theme;
+
+    input {
+      width: 100%;
+
+      font-family: @base-font;
+      font-size: 17px;
+      line-height: 19px;
+      color: @color-base;
+    }
+
+    textarea {
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 145px;
+    }
   }
 
   &__capture {
     margin: 0;
+    margin-top: -10px;
+    margin-bottom: -17px;
     padding: 0;
-    padding-right: 30px;
+    padding-right: 25px;
 
+    font-family: @decor-font;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 17px;
     text-align: left;
     color: @color-theme;
     text-transform: uppercase;
+
+    &--color {
+      padding-right: 20px;
+    }
+
+    &--full-name {
+      padding-right: 20px;
+    }
+
+    &--email {
+      padding-right: 20px;
+    }
   }
 
   &__input {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 
     font-family: @base-font;
     font-size: 17px;
@@ -28,5 +62,9 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  &__submit {
+    background-color: transparent;
   }
 }

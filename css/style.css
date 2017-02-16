@@ -524,6 +524,19 @@ input[type="checkbox"]:checked + label .checkbox-indicator::after {
   width: 23px;
   transform: rotate(-45deg);
 }
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  padding: 15px 0;
+  border: none;
+  border-bottom: 2px solid #000000;
+  outline: none;
+}
+textarea {
+  resize: none;
+  padding: 15px;
+  border: 2px solid #444444;
+}
 .icon--cart {
   width: 21px;
   height: 18px;
@@ -2017,22 +2030,52 @@ input[type="checkbox"]:checked + label .checkbox-indicator::after {
   line-height: 25px;
   color: #444444;
 }
+.form {
+  margin-bottom: 60px;
+}
 .form__group {
   margin: 0;
-  padding: 30px 0;
+  padding: 40px 0;
   border: none;
   border-top: 1px solid #63d1bb;
 }
+.form__group input {
+  width: 100%;
+  font-family: "Verdana", sans-serif;
+  font-size: 17px;
+  line-height: 19px;
+  color: #444444;
+}
+.form__group textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 145px;
+}
 .form__capture {
   margin: 0;
+  margin-top: -10px;
+  margin-bottom: -17px;
   padding: 0;
-  padding-right: 30px;
+  padding-right: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
   text-align: left;
   color: #63d1bb;
   text-transform: uppercase;
 }
+.form__capture--color {
+  padding-right: 20px;
+}
+.form__capture--full-name {
+  padding-right: 20px;
+}
+.form__capture--email {
+  padding-right: 20px;
+}
 .form__input {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: "Verdana", sans-serif;
   font-size: 17px;
   line-height: 19px;
@@ -2040,4 +2083,7 @@ input[type="checkbox"]:checked + label .checkbox-indicator::after {
 }
 .form__input:last-child {
   margin-bottom: 0;
+}
+.form__submit {
+  background-color: transparent;
 }
