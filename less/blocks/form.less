@@ -1,6 +1,7 @@
 .form {
 
   &__group {
+    margin: 0;
     padding: 30px 0;
     border: none;
     border-top: 1px solid @color-theme;
@@ -17,9 +18,15 @@
   }
 
   &__input {
+    margin-bottom: 30px;
+
     font-family: @base-font;
     font-size: 17px;
     line-height: 19px;
     font-weight: 700;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
