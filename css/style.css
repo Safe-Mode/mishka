@@ -2039,6 +2039,15 @@ textarea {
   border: none;
   border-top: 1px solid #63d1bb;
 }
+.form__group--phone {
+  padding-top: 30px;
+}
+.form__group--email {
+  padding-top: 30px;
+}
+.form__group--add {
+  padding-top: 50px;
+}
 .form__group input {
   width: 100%;
   font-family: "Verdana", sans-serif;
