@@ -24,7 +24,14 @@
   @media @desktop-widths {
       width: 1050px;
   }
+}
 
+.clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
 .zigzag() {
