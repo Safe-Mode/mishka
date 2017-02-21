@@ -1,7 +1,7 @@
 .order {
 
   &__wrapper {
-    .container-fluid();
+    .container();
 
     box-sizing: border-box;
     padding: 0 30px;
@@ -9,10 +9,33 @@
 
   &__description {
     margin-bottom: 25px;
-    
+
     font-family: @decor-font;
     font-size: 15px;
     line-height: 25px;
     color: @color-base;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media @tablet-widths {
+  .order {
+
+    &__wrapper {
+      box-sizing: content-box;
+      padding: 0 50px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 30px;
+
+      br {
+        display: inline;
+      }
+    }
   }
 }

@@ -2006,21 +2006,19 @@ textarea {
   }
 }
 .order__wrapper {
-  width: 100%;
-  min-width: 320px;
+  width: 320px;
+  margin: 0 auto;
   box-sizing: border-box;
   padding: 0 30px;
 }
 @media (min-width: 768px) {
   .order__wrapper {
-    width: 87%;
-    max-width: 1050px;
-    margin: 0 auto;
+    width: 668px;
   }
 }
 @media (min-width: 1150px) {
   .order__wrapper {
-    width: 91.3%;
+    width: 1050px;
   }
 }
 .order__description {
@@ -2029,6 +2027,22 @@ textarea {
   font-size: 15px;
   line-height: 25px;
   color: #444444;
+}
+.order__description br {
+  display: none;
+}
+@media (min-width: 768px) {
+  .order__wrapper {
+    box-sizing: content-box;
+    padding: 0 50px;
+  }
+  .order__description {
+    font-size: 16px;
+    line-height: 30px;
+  }
+  .order__description br {
+    display: inline;
+  }
 }
 .form {
   margin-bottom: 60px;
@@ -2095,4 +2109,15 @@ textarea {
 }
 .form__submit {
   background-color: transparent;
+}
+.form__note {
+  display: none;
+}
+@media (min-width: 768px) {
+  .form__group input {
+    font-size: 18px;
+  }
+  .form__input {
+    font-size: 18px;
+  }
 }
