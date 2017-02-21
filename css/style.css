@@ -2117,6 +2117,9 @@ textarea {
   .form__group input {
     font-size: 18px;
   }
+  .form__group textarea {
+    font-size: 18px;
+  }
   .form__input {
     font-size: 18px;
   }
