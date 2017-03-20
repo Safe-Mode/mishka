@@ -65,12 +65,21 @@
   }
 
   &__input {
-    margin-bottom: 20px;
-
     font-family: @base-font;
     font-size: 17px;
     line-height: 19px;
     font-weight: 700;
+
+    &:not(.form__input--color) {
+      margin-bottom: 20px;
+    }
+
+    &--color {
+
+      &:nth-child(even) {
+        margin-bottom: 20px;
+      }
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -78,6 +87,7 @@
   }
 
   &__submit {
+    color: @color-base;
     background-color: transparent;
   }
 
@@ -89,9 +99,27 @@
 @media @tablet-widths {
   .form {
 
+    &__wrapper {
+
+      &:nth-child(even) {
+        background-color: #f1f1f1;
+      }
+    }
+
     &__group {
       .clearfix();
       border: none;
+      padding: 60px 0;
+
+      &--phone {
+        padding-top: 50px;
+        padding-bottom: 20px;
+      }
+
+      &--email {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      }
 
       input {
         padding: 15px;
@@ -123,7 +151,6 @@
     }
 
     &__input {
-      margin-bottom: 25px;
       font-size: 18px;
 
       &--color {
@@ -131,6 +158,14 @@
 
         &:nth-child(odd) {
           margin-right: 20px;
+        }
+
+        &:nth-child(even) {
+          margin-bottom: 25px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
         }
       }
 
@@ -142,6 +177,20 @@
           margin-right: 25px;
         }
       }
+    }
+
+    &__submit {
+      width: 225px;
+    }
+
+    &__note {
+      display: block;
+
+      font-family: @decor-font;
+      font-size: 16px;
+      line-height: 30px;
+      color: @color-base;
+      font-weight: 400;
     }
   }
 }
