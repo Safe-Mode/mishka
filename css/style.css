@@ -2070,7 +2070,7 @@ textarea {
     display: inline;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1150px) {
   .order__wrapper {
     box-sizing: border-box;
     padding: 0;
@@ -2134,6 +2134,9 @@ textarea {
 .form__capture--email {
   padding-right: 20px;
 }
+.form__inputs .input__icon {
+  display: none;
+}
 .form__input {
   font-family: "Verdana", sans-serif;
   font-size: 17px;
@@ -2143,7 +2146,7 @@ textarea {
 .form__input:not(.form__input--color) {
   margin-bottom: 20px;
 }
-.form__input--color:nth-child(even) {
+.form__input--color {
   margin-bottom: 20px;
 }
 .form__input:last-child {
@@ -2192,6 +2195,7 @@ textarea {
     margin-top: 16px;
   }
   .form__inputs {
+    position: relative;
     float: right;
     width: 500px;
     display: flex;
@@ -2201,6 +2205,13 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
   }
+  .form__inputs .input__icon {
+    position: absolute;
+    top: 14px;
+    right: 5px;
+    display: block;
+    opacity: 0.2;
+  }
   .form__input {
     font-size: 18px;
   }
@@ -2209,6 +2220,7 @@ textarea {
   }
   .form__input--color:nth-child(odd) {
     margin-right: 20px;
+    margin-bottom: 0;
   }
   .form__input--color:nth-child(even) {
     margin-bottom: 25px;

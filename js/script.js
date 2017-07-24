@@ -20,7 +20,7 @@ navToggle.addEventListener('click', function() {
 	'use strict';
 
 	var file     = 'img/sprite.svg',
-		revision = 12;
+		revision = 19;
 
 	if( !document.createElementNS || !document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ).createSVGRect )
 		return true;
