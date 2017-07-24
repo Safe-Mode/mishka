@@ -2070,6 +2070,16 @@ textarea {
     display: inline;
   }
 }
+@media (min-width: 768px) {
+  .order__wrapper {
+    box-sizing: border-box;
+    padding: 0;
+    padding-left: 115px;
+  }
+  .order__description {
+    padding-left: 110px;
+  }
+}
 .form {
   margin-bottom: 60px;
 }
@@ -2224,5 +2234,48 @@ textarea {
     line-height: 30px;
     color: #444444;
     font-weight: 400;
+  }
+}
+@media (min-width: 1150px) {
+  .form {
+    margin-bottom: 95px;
+  }
+  .form__capture {
+    width: 110px;
+  }
+  .form__inputs {
+    float: left;
+  }
+  .form__inputs--color {
+    width: 760px;
+  }
+  .form__inputs--fullname {
+    width: auto;
+  }
+  .form__inputs--contact {
+    width: 700px;
+  }
+  .form__input--color:nth-child(n) {
+    margin-right: 20px;
+  }
+  .form__input--color:nth-child(3n) {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .form__input--color:nth-child(even) {
+    margin-bottom: 0;
+  }
+  .form__input--fullname {
+    width: 700px;
+  }
+  .form__submit {
+    margin-top: 30px;
+  }
+  .form__group textarea {
+    width: 700px;
+  }
+  .form__note {
+    margin-right: 125px;
+    margin-top: 30px;
   }
 }

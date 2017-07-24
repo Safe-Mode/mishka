@@ -197,3 +197,68 @@
     }
   }
 }
+
+@media @desktop-widths {
+  .form {
+    margin-bottom: 95px;
+
+    &__capture {
+      width: 110px;
+    }
+
+    &__inputs {
+      float: left;
+
+      &--color {
+        width: 760px;
+      }
+
+      &--fullname {
+        width: auto;
+      }
+
+      &--contact {
+        width: 700px;
+      }
+    }
+
+    &__input {
+
+      &--color {
+
+        &:nth-child(n) {
+          margin-right: 20px;
+        }
+
+        &:nth-child(3n){
+          margin-right: 0;
+          margin-bottom: 25px;
+        }
+
+        &:nth-child(even) {
+          margin-bottom: 0;
+        }
+      }
+
+      &--fullname {
+        width: 700px;
+      }
+    }
+
+    &__submit {
+      margin-top: 30px;
+    }
+
+    &__group {
+
+      textarea {
+        width: 700px;
+      }
+    }
+
+    &__note {
+      margin-right: 125px;
+      margin-top: 30px;
+    }
+  }
+}
